@@ -1,69 +1,33 @@
-# dados_pessoais
+# Read Me First
+The following was discovered as part of building this project:
 
-> **Observação — Spring Initializr Customizado**
-> Este projeto foi gerado pelo **TADS Spring Initializr customizado**, uma ferramenta
-> didática para a disciplina de Desenvolvimento de Sistemas Web no curso TADS do Senac.
-> A estrutura gerada é equivalente à do [Spring Initializr oficial](https://start.spring.io),
-> porém inclui algumas dependências adicionais não presentes no gerador
-> original (ex: Springdoc OpenAPI/Swagger, Thymeleaf Layout Dialect, WebJars).
+* The original package name 'br.senac.tads.dns.dados-pessoais' is invalid and this project uses 'br.senac.tads.dns.dados_pessoais' instead.
 
-## Dependências selecionadas
+# Getting Started
 
-- [Spring Web](https://docs.spring.io/spring-framework/reference/web/webmvc.html) — Build web, including RESTful, applications using Spring MVC. Uses Apache Tomcat as the default embedded container.
-- [Validation](https://docs.spring.io/spring-framework/reference/core/validation/beanvalidation.html) — Bean Validation with Hibernate Validator.
-- [Spring Boot DevTools](https://docs.spring.io/spring-boot/docs/current/reference/html/using.html#using.devtools) — Provides fast application restarts, LiveReload, and configurations for enhanced development experience.
-- [Lombok](https://projectlombok.org/) — Java annotation library which helps to reduce boilerplate code.
-- [Spring Configuration Processor](#) — Generate metadata for developers to offer contextual help and "code completion" when working with custom configuration keys (ex.application.properties/.yml files).
+### Reference Documentation
+For further reference, please consider the following sections:
 
-## Como executar
+* [Official Apache Maven documentation](https://maven.apache.org/guides/index.html)
+* [Spring Boot Maven Plugin Reference Guide](https://docs.spring.io/spring-boot/4.1.1/maven-plugin)
+* [Create an OCI image](https://docs.spring.io/spring-boot/4.1.1/maven-plugin/build-image.html)
+* [Spring Web](https://docs.spring.io/spring-boot/4.1.1/reference/web/servlet.html)
+* [Validation](https://docs.spring.io/spring-boot/4.1.1/reference/io/validation.html)
+* [Spring Data JPA](https://docs.spring.io/spring-boot/4.1.1/reference/data/sql.html#data.sql.jpa-and-spring-data)
 
-Este projeto foi criado para ser aberto diretamente na IDE de sua preferência
-(IntelliJ IDEA, Eclipse, STS, VS Code com extensão Java, etc.). Importe-o como um
-projeto Maven existente e aguarde o download das dependências.
+### Guides
+The following guides illustrate how to use some features concretely:
 
-### Pré-requisitos
+* [Building a RESTful Web Service](https://spring.io/guides/gs/rest-service/)
+* [Serving Web Content with Spring MVC](https://spring.io/guides/gs/serving-web-content/)
+* [Building REST services with Spring](https://spring.io/guides/tutorials/rest/)
+* [Validation](https://spring.io/guides/gs/validating-form-input/)
+* [Accessing Data with JPA](https://spring.io/guides/gs/accessing-data-jpa/)
 
-- Java 17+
-- Maven 3.9+ (instalado localmente **ou** use o Maven Wrapper após gerá-lo — veja abaixo)
+### Maven Parent overrides
 
-### Gerando os arquivos do Maven Wrapper
+Due to Maven's design, elements are inherited from the parent POM to the project POM.
+While most of the inheritance is fine, it also inherits unwanted elements like `<license>` and `<developers>` from the parent.
+To prevent this, the project POM contains empty overrides for these elements.
+If you manually switch to a different parent and actually want the inheritance, you need to remove those overrides.
 
-O arquivo ZIP gerado por esta ferramenta **não inclui** os scripts `mvnw` / `mvnw.cmd`.
-Para gerá-los, execute o comando abaixo uma vez na raiz do projeto (requer Maven instalado):
-
-```bash
-mvn wrapper:wrapper
-```
-
-Isso criará os arquivos `mvnw`, `mvnw.cmd` e o diretório `.mvn/wrapper/`.
-
-### Executar com Maven Wrapper
-
-```bash
-# Linux / macOS
-./mvnw spring-boot:run
-
-# Windows
-mvnw.cmd spring-boot:run
-```
-
-### Executar com Maven local
-
-```bash
-mvn spring-boot:run
-```
-
-### Empacotar
-
-```bash
-./mvnw clean package
-java -jar target/dados_pessoais-0.0.1-SNAPSHOT.jar
-```
-
-## Referências
-
-- [Documentação do Spring Boot](https://docs.spring.io/spring-boot/docs/current/reference/html/)
-- [Guias do Spring](https://spring.io/guides)
-- [Spring Initializr oficial](https://start.spring.io)
-- [Como gerar os arquivos do Maven Wrapper](https://mkyong.com/maven/how-to-generate-maven-wrapper-files-mvnw-and-mvnw-cmd/)
-- [Dicas e Tutoriais Spring](https://github.com/ftsuda-senac/dicas-desenvolvimento/blob/main/Dicas-e-Tutoriais-Spring.md)
